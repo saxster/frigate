@@ -1,13 +1,8 @@
 name: On pull request
 
 on:
-  pull_request:
-    paths-ignore:
-      - "docs/**"
-      - ".github/*.yml"
-      - ".github/DISCUSSION_TEMPLATE/**"
-      - ".github/ISSUE_TEMPLATE/**"
-
+  push:
+    branches: [main]
 env:
   DEFAULT_PYTHON: 3.11
 
