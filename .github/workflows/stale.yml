@@ -4,9 +4,8 @@
 
 name: "Stalebot"
 on:
-  schedule:
-    - cron: "0 0 * * *" # run stalebot once a day
-
+  push:
+    branches: [main]
 jobs:
   stale:
     runs-on: ubuntu-latest
